@@ -9,7 +9,7 @@ on:
 
 jobs:
     linux_build:
-        runs-on: ubuntu-20.04
+        runs-on: macos-14
 
         # Only allow one build at a time otherwise we can run out of licenses
         concurrency:
