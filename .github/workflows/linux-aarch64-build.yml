@@ -3,8 +3,9 @@ name: linux-build
 on:
     pull_request:
     push:
-        branches:
-            - master
+        # TODO: for testing purposes, we run this workflow on all branches
+        # branches:
+        #     - master
 
 jobs:
 
