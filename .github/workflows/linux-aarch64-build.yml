@@ -28,6 +28,10 @@ jobs:
       PYTHON_VERSION: ${{ matrix.python-version }}
 
     steps:
+      - name: Install apt dependencies
+        run: |
+          apt-get update && apt-get install -y lsb-release && apt-get clean all
+
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
