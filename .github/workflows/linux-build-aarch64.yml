@@ -18,7 +18,7 @@ jobs:
         strategy:
             fail-fast: true
             matrix:
-                python-image: ["python:3.8-bookworm⁠", "python:3.11-bookworm⁠"]
+                python-image: ["python:3.8-bookworm", "python:3.11-bookworm"]
 
         container:
             image: ${{ matrix.python-image }}
